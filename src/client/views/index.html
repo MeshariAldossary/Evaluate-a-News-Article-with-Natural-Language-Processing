@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sentiment</title>
+        <meta charset ="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <header>
+            
+             
+             </div>   
+           
+            
+        </header>
+        
+
+        <main>
+            <div id ="container">
+            <div id="left"></div>
+            <div id ="right"></div>
+            </div>
+            <section>
+                <form class="" id = "text" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value=""  placeholder="Enter url of a news article here">
+                    <input type="submit" id = "submit" name="" value="Check Sentiments" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <section>
+                <strong></strong>
+                <div id="results"><ul>
+                    <div id = "obj"><li></li></div>
+                    <div id = "conf"><li></li></div>
+                    <div id = "polarity"><li></li></div>
+                    <div id = "agreement"><li></li></div>
+                    <div id = "ironic"></div>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>2021 by Kakashi Senpai</p>
+        </footer>
+        <script>
+            if('serviceWorker' in navigator){
+                window.addEventListener('load', () =>{
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+   
+</html>

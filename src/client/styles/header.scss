@@ -1,0 +1,42 @@
+  
+
+@media(min-width:600px)and(max-width:1199px){
+
+    #container{
+        display:flex;
+        flex-direction:row;
+    
+    }    
+    
+    #left{
+        width:10vw;
+    }
+
+    #right{
+        width:10vw;
+    }
+    
+}
+    
+
+@media(min-width:1200px){
+
+#container{
+    display:flex;
+    flex-direction:row;
+
+}    
+
+#left{
+    width:15vw;
+    
+    
+}
+
+#right{
+    width:15vw;
+   
+}
+}
+
+
